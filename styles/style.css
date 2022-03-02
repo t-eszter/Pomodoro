@@ -15,7 +15,7 @@ body {
     height: 100%;
 }
 
-#timer {
+#timerContainer {
     width: 350px;
     height: 444px;
     margin: 0 auto;
