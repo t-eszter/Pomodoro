@@ -1,0 +1,24 @@
+{
+  "name": "pomodoro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t-eszter/Pomodoro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/t-eszter/Pomodoro/issues"
+  },
+  "homepage": "https://github.com/t-eszter/Pomodoro#readme",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "jest": "^27.5.1"
+  }
+}
