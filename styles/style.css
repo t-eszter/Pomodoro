@@ -81,7 +81,7 @@ label {
     box-shadow: 0 0 27px #CFF0E3;
 }
 
-.start-btn {
+.start-btn, .save-btn {
     width: 120px;
     height: 44px;
     background-color: #7ECA86;
@@ -113,6 +113,8 @@ label {
 	display: block;
 	border-radius: 100px;
 	position: relative;
+	display: inline-block;
+	margin-left: 40px;
 }
 
 .switchToggle label:after {
@@ -169,6 +171,10 @@ label {
 
 .toggle-switchArea {
 	margin: 10px 0 10px 0;
+}
+
+.switchToggle label {
+	padding: 9px;
 }
 
 /*number stepper*/

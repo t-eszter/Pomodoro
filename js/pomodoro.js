@@ -23,3 +23,16 @@ function checkSecond(sec) {
   if (sec < 0) {sec = "59"};
   return sec;
 }
+
+
+var saveButton = document.getElementById("saveButton");
+
+saveButton.addEventListener("click", updateTime);
+
+function updateTime(){
+	var newTime = document.getElementById("focus-length").value;
+	newTime.toString();
+	newTime = newTime + ":00";
+	document.getElementById('timer').textContent = newTime;
+}
+

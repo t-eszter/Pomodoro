@@ -23,7 +23,7 @@
         
         <div id="timerContainer">
             <div class="inner circle-1"></div>
-			<div id="timer" class="inner circle-2"><h3>25:00</h3></div>
+			<div class="inner circle-2"><h3 id="timer">25:00</h3></div>
             <div class="inner start-btn"><button class="btn start" id="startButton" type="button">START</button></div>
         </div>
         
@@ -53,12 +53,13 @@
 			  <div id="f-settings">
 			  <label>Focus Settings</label>
 			  <div class="switchToggle">
+				  <span>Play alarm when done</span>
 				<input type="checkbox" id="switch">
 				<label for="switch">Toggle</label>
 			</div>
 			  </div>
 			  
-			  <div class="inner start-btn"><button class="btn start" id="startButton" type="button">SAVE</button></div>
+			  <div class="inner save-btn"><button class="btn start" id="saveButton" type="button" data-bs-dismiss="offcanvas">SAVE</button></div>
           </div>
         </div>
     <!-- Option 1: Bootstrap Bundle with Popper -->
