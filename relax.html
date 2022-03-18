@@ -13,19 +13,33 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	  
 	  
+<!--	 https://www.youtube.com/watch?v=8Xdwr4cRTVA-->
+	  
 	  <script src="js/bootstrap-input-spinner.js"></script>
 	
 
 <!--    <title>Pomodoro Timer</title>-->
   </head>
   <body>
-    <div class="container h-100">
-        
-        <div id="timerContainer">
-            <div class="inner circle-1"></div>
-			<div class="inner circle-2"><h3 id="timer">25:00</h3></div>
-            <div class="inner start-btn"><button class="btn start" id="startButton" type="button">START</button></div>
-        </div>
+    <div class="container h-100 relaxState">
+        <div class="row">
+			<div class="col d-flex align-items-center text-center">
+			
+			<button class="btn relaxBtn" type="button" onclick="location.href='index.html';" >Start guided meditation</button>
+				
+			</div>
+			<div class="col d-flex align-items-center text-center">
+				<div id="relaxContainer">
+					<div class="inner circle-1"></div>
+					<div class="inner circle-2"><h3 id="timer">5:00</h3></div>
+				</div>
+			</div>
+			<div class="col d-flex align-items-center text-center">
+			<button class="btn relaxBtn" type="button" onclick="location.href='index.html';" >Start breathing excercise</button>
+			
+			</div>
+			
+		</div>
 		
 		<div class="footer text-center fixed-bottom">
 			 	<button class="btn about" type="button"  data-bs-toggle="modal"  data-bs-target="#aboutModal"><i class="bi bi-info-circle"></i></button>
