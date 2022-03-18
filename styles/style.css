@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
 
-html,body {
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+html,body{
   height: 100%;
 	font-family: 'Montserrat', sans-serif;
 }
@@ -68,7 +70,8 @@ label {
   position: absolute;
 }
 
-.settings {
+.about, .relax, .settings {
+/*
     position: absolute;
     top:0;
     right:0;
@@ -79,7 +82,28 @@ label {
     font-size: 15px;
     font-weight: 400; 
     box-shadow: 0 0 27px #CFF0E3;
+*/
+
+	background: rgba(255, 255, 255, 0.8) !important;
+	border: 1px solid #FFFFFF;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.18), inset 0px 0px 10px rgba(137, 137, 137, 0.25);
+	border-radius: 10px;
 }
+
+.about, .settings{
+	width: 50px;
+	height: 51px;
+	
+}
+
+.relax {
+	width: 150px;
+	height: 51px;
+	margin: 0 30px;
+	
+}
+
 
 .start-btn, .save-btn {
     width: 120px;
@@ -228,4 +252,14 @@ label {
 
 #f-settings {
 	padding: 30px;
+}
+
+
+.modal-content {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 32px;
+}
+
+.modal-body .row:nth-child(odd){
+	height: 4rem;
 }

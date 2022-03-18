@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Bootstrap CSS -->
+	  
+	 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	  
+	  
+	  <script src="js/bootstrap-input-spinner.js"></script>
+	
+
+<!--    <title>Pomodoro Timer</title>-->
+  </head>
+  <body>
+    <div class="container h-100">
+        
+        <div id="timerContainer">
+            <div class="inner circle-1"></div>
+			<div class="inner circle-2"><h3 id="timer">25:00</h3></div>
+            <div class="inner start-btn"><button class="btn start" id="startButton" type="button">START</button></div>
+        </div>
+		
+		<div class="footer text-center fixed-bottom">
+			 	<button class="btn about" type="button"  data-bs-toggle="modal"  data-bs-target="#aboutModal"><i class="bi bi-info-circle"></i></button>
+			
+					<button class="btn relax" type="button" onclick="location.href='index.html';" >Focus</button>
+			
+				 <button class="btn settings" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-gear"></i></button>
+			
+		</div>
+  
+    </div>
+
+    <!-- Settings -->
+     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Settings</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body">
+			  <div id="f-length">
+				<label for="focus-length">Focus Length</label>
+				<input id="focus-length" class="length" type="number" value="25" min="0" max="1000" step="1"/>
+			  </div>
+			  
+			  
+			  <div id="f-settings">
+			  <label>Focus Settings</label>
+			  <div class="switchToggle">
+				  <span>Play alarm when done</span>
+				<input type="checkbox" id="switch">
+				<label for="switch">Toggle</label>
+			</div>
+			  </div>
+			  
+			  <div class="inner save-btn"><button class="btn start" id="saveButton" type="button" data-bs-dismiss="offcanvas">SAVE</button></div>
+          </div>
+			
+      </div>
+	  
+	  
+<!--	  About modal-->
+	<div class="modal" id="aboutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-xl modal-dialog-centered">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">About</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				  <div class="row"></div>
+				  <div class="row">
+				<div class="col d-flex align-items-center text-center">
+	
+						The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. It uses a timer to break work into intervals, traditionally 25 minutes in length, separated by short breaks.
+				</div>
+				<div class="col text-center d-flex align-items-center">
+				 <img src="assets/about.png"/>
+				</div>
+				<div class="col text-center d-flex align-items-center">
+				  Each interval is known as a pomodoro, from the Italian word for tomato, after the tomato-shaped kitchen timer Cirillo used as a university student.
+				</div>
+				  </div>
+				  <div class="row"></div>
+			  </div>
+			</div>
+		  </div>
+	  </div>
+	  
+	
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	 	<script>
+			$("input[type='number']").inputSpinner();
+		</script>
+  </body>
+  <script src="js/pomodoro.js"></script>
+</html>
+
+<!--https://shaack.com/projekte/bootstrap-input-spinner/-->
