@@ -11,6 +11,13 @@ body {
     background: #EBFFFB !important;
 }
 
+#relax{
+
+/* rainbow */
+background: linear-gradient(162.46deg, #F57DF8 0%, #8C4FC9 42.2%, #AEE0E6 100%) !important;
+
+}
+
 strong {
 	color: #000;
 }
@@ -69,6 +76,13 @@ label {
     height: 200px;
     border-radius: 50%;
     background-color: #fff;
+	opacity: 0.3;
+	   -webkit-transition: all 2s ease;  
+	  -moz-transition: all 2s ease;  
+	  -o-transition: all 2s ease;  
+	  -ms-transition: all 2s ease;  
+	  transition: all 2s ease;
+	  transform-origin: center;
 }
 
 #relaxContainer .circle-2{
@@ -318,16 +332,12 @@ border-radius: 5px !important;
 
 }
 
-#meditationPlayer {
-	
-}
-
 .modal-backdrop.show {
 	opacity: 0 !important;
 }
 
 .offcanvas-bottom {
-	height: 22vh !important;
+	height: 20vh !important;
 	border-top: none !important;
 	box-shadow: 0px 0px 1000px rgba(19, 133, 171, 0.24);
 }
@@ -335,4 +345,31 @@ border-radius: 5px !important;
 .offcanvas-end {
 	border-left: none !important;
 	box-shadow: 0px 0px 28px rgba(19, 133, 171, 0.24);
+}
+
+#audioPlayer {
+	padding-top: 0 !important;
+}
+
+
+#relaxContainer .circle-1-big {
+	animation-iteration-count: infinite;
+	height: 300px;
+  	width: 300px;
+}
+
+@keyframes breathing {
+  from {
+     -webkit-transition: all 2s ease;  
+	  -moz-transition: all 2s ease;  
+	  -o-transition: all 2s ease;  
+	  -ms-transition: all 2s ease;  
+	  transition: all 2s ease;
+	  transform-origin: center;
+  }
+
+  to {
+	transform-origin: center;
+    transform: translateX(100%);
+  }
 }

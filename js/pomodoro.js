@@ -36,3 +36,8 @@ function updateTime(){
 	document.getElementById('timer').textContent = newTime;
 }
 
+var breathBtn = document.getElementById("breathBtn");
+
+breathBtn.addEventListener("click", breathingExercise);
+
+
