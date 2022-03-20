@@ -20,6 +20,7 @@
 	  
 <!--	 https://www.youtube.com/watch?v=8Xdwr4cRTVA-->
 <!--	  https://essential.audio-->
+<!--	  https://codepen.io/EmNudge/pen/rRbLJQ-->
 	  
 	  
 	  
@@ -38,12 +39,12 @@
 			</div>
 			<div class="col d-flex align-items-center text-center">
 				<div id="relaxContainer">
-					<div class="inner circle-1"></div>
-					<div class="inner circle-2"><h3 id="timer">5:00</h3></div>
+					<div id="animated" class="inner circle-1"></div>
+					<div class="inner circle-2"><h3 id="timer">5:00</h3><p></p></div>
 				</div>
 			</div>
 			<div class="col d-flex align-items-center text-center">
-			<button class="btn relaxBtn" type="button" id="breathingBtn" >Start breathing excercise</button>
+			<button class="btn breathingBtn" type="button" id="breathingBtn" >Start breathing excercise</button>
 			
 			</div>
 			
@@ -135,6 +136,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	 	<script>
 			$("input[type='number']").inputSpinner();
+			
+			//$('#breathingBtn').removeClass('circle-1').addClass('circle-1-big');
+			
+//			$("#breathingBtn").attr('.circle-1', '.circle-1-big');
+			
+			let x = 0;
+			$("#breathingBtn").click(function() {
+				if (x==0){
+				$("#breathingBtn").html("Stop breathing excercise");
+				$("#animated").removeClass('circle-1').addClass('circle-1-big');
+				$('#relaxContainer .circle-2').toggleClass('breathingText');
+				x++;
+				} else{
+					$("#breathingBtn").html("Start breathing excercise");
+					$("#animated").removeClass('circle-1-big').addClass('circle-1');
+					$('#relaxContainer .circle-2').toggleClass('breathingText');
+					x--;
+				}
+									 
+			});
+			
+			
+			
 		</script>
   </body>
 	
