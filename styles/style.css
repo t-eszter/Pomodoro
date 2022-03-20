@@ -8,14 +8,13 @@ html,body{
 }
 
 body {
-    background: #EBFFFB !important;
+	/* rainbow */
+background: linear-gradient(162.46deg, #F57DF8 0%, #8C4FC9 42.2%, #AEE0E6 100%) !important;
+
 }
 
 #relax{
-
-/* rainbow */
-background: linear-gradient(162.46deg, #F57DF8 0%, #8C4FC9 42.2%, #AEE0E6 100%) !important;
-
+    background: #EBFFFB !important;
 }
 
 strong {
@@ -47,6 +46,7 @@ label {
     height: 350px;
     border-radius: 50%;
     background-color: #fff;
+	opacity: 0.3;
 }
 
 #focusContainer .circle-2{
@@ -62,13 +62,17 @@ label {
     display: flex;
     align-items: center;
     align-content: center;
+
 }
 
 #relaxContainer {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     margin: 0 auto;
 	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #relaxContainer .circle-1{
@@ -77,13 +81,73 @@ label {
     border-radius: 50%;
     background-color: #fff;
 	opacity: 0.3;
-	   -webkit-transition: all 2s ease;  
-	  -moz-transition: all 2s ease;  
-	  -o-transition: all 2s ease;  
-	  -ms-transition: all 2s ease;  
-	  transition: all 2s ease;
-	  transform-origin: center;
 }
+
+#relaxContainer .circle-1-big {
+	transform-origin: center;
+	-webkit-animation: breathing 30s ease infinite;
+    animation: breathing 30s ease infinite;
+	border-radius: 50%;
+    background: linear-gradient(162.46deg, #F57DF8 0%, #8C4FC9 42.2%, #AEE0E6 100%);
+}
+
+
+@keyframes breathing {
+  from {
+	  width: 200px;
+	  height: 200px;
+	  background-position: 0% 50%;
+  }
+	
+	33.333% {
+		width: 300px;
+	  height: 300px;
+		background-position: 100% 50%;
+
+	}
+	
+	83.333%{
+		width: 300px;
+	  height: 300px;
+		background-position: 0% 50%;
+
+	}
+
+
+  	to {
+	width: 200px;
+	height: 200px;
+	background-position: 0% 50%;
+  }
+}
+
+@-webkit-keyframes breathing {
+  from {
+	  width: 200px;
+	  height: 200px;
+	  background-position: 0% 50%;
+  }
+	
+	33.333% {
+		width: 300px;
+	  height: 300px;
+		background-position: 100% 50%;
+	}
+	
+	83.333%{
+		width: 300px;
+	  height: 300px;
+		background-position: 0% 50%;
+	}
+
+
+  	to {
+	width: 200px;
+	height: 200px;
+	background-position: 0% 50%;
+  }
+}
+
 
 #relaxContainer .circle-2{
     width: 170px;
@@ -98,6 +162,7 @@ label {
     display: flex;
     align-items: center;
     align-content: center;
+	flex-direction: column;
 }
 
 
@@ -119,7 +184,46 @@ label {
     width: 100%;
     font-weight: 100;
     letter-spacing: 0.1em;
+	padding-top: 40px;
 }
+
+#relaxContainer .breathingText p:before{
+	content: '';
+    font-size: 12px;
+    -webkit-animation: breathingText 30s ease infinite;
+    animation: breathingText 30s ease infinite;
+}
+
+@keyframes breathingText {
+  from {
+	 	content: "Breath in";
+  }
+	
+	33.3% {
+			  content: "Breath in";
+
+	}
+	
+	33.333% {
+			  content: "Hold";
+
+	}
+	
+	83.333%{
+			  content: "Hold";
+
+	}
+	
+	83.4%{
+			  content: "Breath out";
+
+	}
+
+  	to {
+		  content: "Breath out";
+  }
+}
+
 
 .inner {
   position: absolute;
@@ -143,7 +247,7 @@ label {
 	border: 1px solid #FFFFFF;
 	box-sizing: border-box;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.18), inset 0px 0px 10px rgba(137, 137, 137, 0.25);
-	border-radius: 10px;
+	border-radius: 10px 10px 0 0;
 }
 
 .about, .settings{
@@ -318,7 +422,7 @@ label {
 	height: 4rem;
 }
 
-.relaxBtn {
+.relaxBtn, .breathingBtn {
 
 width: 280px;
 height: 44px;
@@ -351,25 +455,8 @@ border-radius: 5px !important;
 	padding-top: 0 !important;
 }
 
-
-#relaxContainer .circle-1-big {
-	animation-iteration-count: infinite;
-	height: 300px;
-  	width: 300px;
+.modal-content {
+	border: none !important;
+	box-shadow: 0px 0px 1000px rgba(19, 133, 171, 0.24);
 }
 
-@keyframes breathing {
-  from {
-     -webkit-transition: all 2s ease;  
-	  -moz-transition: all 2s ease;  
-	  -o-transition: all 2s ease;  
-	  -ms-transition: all 2s ease;  
-	  transition: all 2s ease;
-	  transform-origin: center;
-  }
-
-  to {
-	transform-origin: center;
-    transform: translateX(100%);
-  }
-}
