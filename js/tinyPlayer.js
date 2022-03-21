@@ -47,6 +47,7 @@ setInterval(() => {
   );
 }, 500);
 
+
 //toggle between playing and pausing on button click
 const playBtn = audioPlayer.querySelector(".controls .toggle-play");
 playBtn.addEventListener(
@@ -64,6 +65,31 @@ playBtn.addEventListener(
   },
   false
 );
+
+const meditationBtn = document.querySelector(".relaxBtn");
+
+meditationBtn.addEventListener(
+  "click",
+  () => {
+	  playBtn.classList.remove("play");
+      playBtn.classList.add("pause");
+	  audio.play();
+    },
+  false
+);
+
+const closeMeditation = document.querySelector(".pauseMeditation");
+
+closeMeditation.addEventListener(
+  "click",
+  () => {
+	  playBtn.classList.remove("pause");
+      playBtn.classList.add("play");
+      audio.pause();
+    },
+  false
+);
+
 
 //audioPlayer.querySelector(".volume-button").addEventListener("click", () => {
 //  const volumeEl = audioPlayer.querySelector(".volume-container .volume");
