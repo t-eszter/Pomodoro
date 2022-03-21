@@ -50,6 +50,26 @@
 			
 		</div>
 		
+		<div class="row tipsContainer">
+			<div class="col d-flex align-items-center text-center tips">
+				<h4>Positive News</h4>
+				<img src="assets/pexels-keira-burton-6147374.jpg"/>
+				<p><a href="#">New Zealand Bans Tobacco Sales To Young People For Their Lifetime In First-Ever 'Smokefree Generation'</a></p>
+			</div>
+			<div class="col d-flex align-items-center text-center books">
+				<h4>Recommended Book</h4>
+				<img src="assets/factfulness.jpg"/>
+				<p><a href="#">Factfulness: Ten Reasons We're Wrong About the World - Why Things are Better than You Think</a></p>
+			</div>
+			<div class="col d-flex align-items-center text-center tips">
+				<h4>Wellbeing tip</h4>
+				<img src="assets/icn-stretching.png"/>
+				<p>Do a stretching excercise</p>
+			
+			</div>
+			
+		</div>
+		
 		<div class="footer text-center fixed-bottom">
 			 	<button class="btn about" type="button"  data-bs-toggle="modal"  data-bs-target="#aboutModal"><i class="bi bi-info-circle"></i></button>
 			
@@ -96,7 +116,7 @@
 	  <div class="offcanvas offcanvas-bottom" tabindex="-1" id="meditationPlayer" aria-labelledby="offcanvasBottomLabel">
 		  <div class="offcanvas-header">
 			<h5 class="offcanvas-title" id="offcanvasBottomLabel">Guided Meditation</h5>
-			<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			<button type="button" class="btn-close pauseMeditation text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 		  </div>
 		  <div id="audioPlayer" class="offcanvas-body">
 			<div class="audio-player">
@@ -134,6 +154,7 @@
 	  <!-- Settings -->
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	  	<script src="js/tinyPlayer.js"></script>
 	 	<script>
 			$("input[type='number']").inputSpinner();
 			
@@ -159,12 +180,14 @@
 			
 			
 			
+			
+			
 		</script>
   </body>
 	
-  <script src="js/pomodoro.js"></script>
+  <script src="js/relaxtimer.js"></script>
 
-	<script src="js/tinyPlayer.js"></script>
+
 </html>
 
 <!--https://shaack.com/projekte/bootstrap-input-spinner/-->
