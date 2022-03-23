@@ -12,7 +12,7 @@
 	  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	  
-	  
+	   <script src="components/comp-settings.js"></script>
 	  <script src="js/bootstrap-input-spinner.js"></script>
 	  
 	 <audio id="focus-alert" src="assets/diamond-sparkle.mp3" preload="auto"></audio>
@@ -25,7 +25,7 @@
         
         <div id="focusContainer">
             <div class="inner circle-1"></div>
-			<div class="inner circle-2"><h3 id="timer">25:00</h3></div>
+			<div class="inner circle-2"><h3 id="focustimer">25:00</h3></div>
             <div class="inner start-btn"><button class="btn start" id="startButton" type="button">START</button></div>
         </div>
 		
@@ -40,33 +40,8 @@
   
     </div>
 
-    <!-- Settings -->
-     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-          <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel">Settings</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-
-          <div class="offcanvas-body">
-			  <div id="f-length">
-				<label for="focus-length">Focus Length</label>
-				<input id="focus-length" class="length" type="number" value="25" min="0" max="1000" step="1"/>
-			  </div>
-			  
-			  
-			  <div id="f-settings">
-			  <label>Focus Settings</label>
-			  <div class="switchToggle">
-				  <span>Play alarm when done</span>
-				<input type="checkbox" id="switch">
-				<label for="switch">Toggle</label>
-			</div>
-			  </div>
-			  
-			  <div class="inner save-btn"><button class="btn start" id="saveButton" type="button" data-bs-dismiss="offcanvas">SAVE</button></div>
-          </div>
-			
-      </div>
+    <!--	  Settings-->	  
+<settings-component></settings-component>
 	  
 	  
 <!--	  About modal-->
@@ -105,6 +80,7 @@
 		</script>
   </body>
   <script src="js/focustimer.js"></script>
+	<script src="js/settings.js"></script>
 </html>
 
 <!--https://shaack.com/projekte/bootstrap-input-spinner/-->

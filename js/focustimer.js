@@ -4,7 +4,7 @@ startButton.addEventListener("click", startTimer);
 
 
 function startTimer() {
-  var presentTime = document.getElementById('timer').textContent;
+  var presentTime = document.getElementById('focustimer').textContent;
   var timeArray = presentTime.split(/[:]+/);
   var m = timeArray[0];
   var s = checkSecond((timeArray[1] - 1));
@@ -13,7 +13,7 @@ function startTimer() {
 	document.getElementById('focus-alert').play();
     return
   }
-	document.getElementById('timer').textContent = m + ":" + s;
+	document.getElementById('focustimer').textContent = m + ":" + s;
   setTimeout(startTimer, 1000);
   
 }
@@ -33,10 +33,17 @@ function updateTime(){
 	var newTime = document.getElementById("focus-length").value;
 	newTime.toString();
 	newTime = newTime + ":00";
-	document.getElementById('timer').textContent = newTime;
+	document.getElementById('focustimer').textContent = newTime;
 }
 
+var noAlert = document.getElementById("switch");
+noAlert.addEventListener("click", mute);
 
-
+function mute(){
+	var alert = document.getElementById('focus-alert');
+	if (alert.muted){
+		alert.muted = false;}
+	else{alert.muted=true}
+};
 
 

@@ -1,7 +1,5 @@
-
-
 function startTimer() {
-  var presentTime = document.getElementById('timer').textContent;
+  var presentTime = document.getElementById('relaxtimer').textContent;
   var timeArray = presentTime.split(/[:]+/);
   var m = timeArray[0];
   var s = checkSecond((timeArray[1] - 1));
@@ -10,7 +8,7 @@ function startTimer() {
 	document.getElementById('focus-alert').play();
     return
   }
-	document.getElementById('timer').textContent = m + ":" + s;
+	document.getElementById('relaxtimer').textContent = m + ":" + s;
   setTimeout(startTimer, 1000);
   
 }
