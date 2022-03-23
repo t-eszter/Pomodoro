@@ -17,6 +17,11 @@ connectedCallback(){
 				<label for="focus-length">Focus Length</label>
 				<input id="focus-length" class="length" type="number" value="25" min="0" max="1000" step="1"/>
 			  </div>
+
+				<div id="r-length">
+				<label for="relax-length">Relax Length</label>
+				<input id="relax-length" class="length" type="number" value="5" min="0" max="1000" step="1"/>
+			  </div>
 			  
 			  
 			  <div id="f-settings">
@@ -25,6 +30,22 @@ connectedCallback(){
 				  <span>Play alarm when done</span>
 				<input type="checkbox" id="switch">
 				<label for="switch">Toggle</label>
+			</div>
+			<label>Relax Settings</label>
+			  <div class="switchToggle">
+				  <span>Show ‘Positive News’</span>
+				<input type="checkbox" id="switch2">
+				<label for="switch2">Positive News</label>
+			</div>
+			<div class="switchToggle">
+				  <span>Show ‘Recommended Book’</span>
+				<input type="checkbox" id="switch3">
+				<label for="switch3">Recommended Book</label>
+			</div>
+			<div class="switchToggle">
+				  <span>Show ‘Well-being tip’</span>
+				<input type="checkbox" id="switch4">
+				<label for="switch4">Wellbeing Tip</label>
 			</div>
 			  </div>
 			  

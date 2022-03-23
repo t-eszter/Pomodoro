@@ -263,7 +263,7 @@ label {
 }
 
 
-.start-btn, .save-btn {
+.start-btn {
     width: 120px;
     height: 44px;
     background-color: #7ECA86;
@@ -276,7 +276,28 @@ label {
     cursor: pointer;
 }
 
+.save-btn {
+    width: 120px;
+    height: 44px;
+    background-color: #7ECA86;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 29px;
+    cursor: pointer;
+	margin: 0 30% 30px 30%;
+	position: absolute;
+	bottom: 0;
+}
+
 /*switch*/
+
+.switchToggle{
+	display: flex;
+    justify-content: space-between;
+	align-items: center;
+	padding-bottom: 20px;
+}
 
 .switchToggle input[type=checkbox] {
 	height: 0;
@@ -296,7 +317,7 @@ label {
 	border-radius: 100px;
 	position: relative;
 	display: inline-block;
-	margin-left: 40px;
+	margin-left: 30px;
 }
 
 .switchToggle label:after {
@@ -306,7 +327,7 @@ label {
 	left: 6px;
 	width: 32px;
 	height: 32px;
-	background: #A1A1A1;
+	background: #83BC89;
 	border-radius: 90px;
 	transition: 0.3s;
 }
@@ -316,7 +337,7 @@ label {
 }
 
 .switchToggle input + label:before, .switchToggle input + input + label:before {
-	content: 'OFF';
+	content: 'ON';
 	position: absolute;
 	top: 10px;
 	left: 44px;
@@ -329,7 +350,7 @@ label {
 }
 
 .switchToggle input:checked + label:before, .switchToggle input:checked + input + label:before {
-	content: 'ON';
+	content: 'OFF';
 	position: absolute;
 	top: 10px;
 	left: 17px;
@@ -344,7 +365,7 @@ label {
 .switchToggle input:checked + label:after, .switchToggle input:checked + input + label:after {
 	left: calc(100% - 2px);
 	transform: translateX(-100%);
-	background: #83BC89;
+	background: #A1a1a1;
 }
 
 .switchToggle label:active:after {
@@ -357,6 +378,11 @@ label {
 
 .switchToggle label {
 	padding: 9px;
+}
+
+.switchToggle span {
+	font-size: 0.75rem;
+    padding-left: 15px;
 }
 
 /*number stepper*/
@@ -406,10 +432,16 @@ label {
 #f-length {
 	padding-bottom: 20px;
 	padding-left: 30px;
+	display: inline-block;
 }
 
 #f-settings {
 	padding: 30px;
+}
+
+#r-length {
+	display: inline-block;
+	padding-left: 20px;
 }
 
 
@@ -460,7 +492,7 @@ border-radius: 5px !important;
 	box-shadow: 0px 0px 1000px rgba(19, 133, 171, 0.24);
 }
 
-.tips, .books{
+.tips, .books, .news{
 	flex-direction: column;
 }
 

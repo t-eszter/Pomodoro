@@ -13,7 +13,7 @@
 
 	  <link rel="stylesheet" href="styles/tinyPlayer.css" />
 	  
-	 <script src="components/settings.js"></script>
+	 <script src="components/comp-settings.js"></script>
 	  
 	 <script src="js/bootstrap-input-spinner.js"></script>
 	  
@@ -40,7 +40,7 @@
 			<div class="col d-flex align-items-center text-center">
 				<div id="relaxContainer">
 					<div id="animated" class="inner circle-1"></div>
-					<div class="inner circle-2"><h3 id="timer">5:00</h3><p></p></div>
+					<div class="inner circle-2"><h3 id="relaxtimer">5:00</h3><p></p></div>
 				</div>
 			</div>
 			<div class="col d-flex align-items-center text-center">
@@ -51,17 +51,17 @@
 		</div>
 		
 		<div class="row tipsContainer">
-			<div class="col d-flex align-items-center text-center tips">
+			<div id="news" class="col d-flex align-items-center text-center news">
 				<h4>Positive News</h4>
 				<img src="assets/pexels-keira-burton-6147374.jpg"/>
 				<p><a href="#">New Zealand Bans Tobacco Sales To Young People For Their Lifetime In First-Ever 'Smokefree Generation'</a></p>
 			</div>
-			<div class="col d-flex align-items-center text-center books">
+			<div id="books" class="col d-flex align-items-center text-center books">
 				<h4>Recommended Book</h4>
 				<img src="assets/factfulness.jpg"/>
 				<p><a href="#">Factfulness: Ten Reasons We're Wrong About the World - Why Things are Better than You Think</a></p>
 			</div>
-			<div class="col d-flex align-items-center text-center tips">
+			<div id="tips" class="col d-flex align-items-center text-center tips">
 				<h4>Wellbeing tip</h4>
 				<img src="assets/icn-stretching.png"/>
 				<p>Do a stretching excercise</p>
@@ -186,6 +186,7 @@
   </body>
 	
   <script src="js/relaxtimer.js"></script>
+	<script src="js/settings.js"></script>
 
 
 </html>
