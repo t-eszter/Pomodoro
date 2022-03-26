@@ -30,7 +30,7 @@ function updateTime(){
 	var newTime = document.getElementById("focus-length").value;
 	newTime.toString();
 	newTime = newTime + ":00";
-	document.getElementById('timer').textContent = newTime;
+	document.getElementById('relaxtimer').textContent = newTime;
 }
 
 

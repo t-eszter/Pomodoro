@@ -23,27 +23,3 @@ function checkSecond(sec) {
   if (sec < 0) {sec = "59"};
   return sec;
 }
-
-
-var saveButton = document.getElementById("saveButton");
-
-saveButton.addEventListener("click", updateTime);
-
-function updateTime(){
-	var newTime = document.getElementById("focus-length").value;
-	newTime.toString();
-	newTime = newTime + ":00";
-	document.getElementById('focustimer').textContent = newTime;
-}
-
-var noAlert = document.getElementById("switch");
-noAlert.addEventListener("click", mute);
-
-function mute(){
-	var alert = document.getElementById('focus-alert');
-	if (alert.muted){
-		alert.muted = false;}
-	else{alert.muted=true}
-};
-
-
