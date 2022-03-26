@@ -7,6 +7,8 @@ function updateTime(){
 	newTime.toString();
 	newTime = newTime + ":00";
 	document.getElementById('focustimer').textContent = newTime;
+	localStorage.setItem('newTime', newTime);
+	console.log(newTime);
 }
 
 var noAlert = document.getElementById("switch");
