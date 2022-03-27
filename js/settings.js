@@ -1,14 +1,27 @@
+var newFocusValue = localStorage.getItem('newFocusValue');
+var newRelaxValue = localStorage.getItem('newRelaxValue');
+
 var saveButton = document.getElementById("saveButton");
 
 saveButton.addEventListener("click", updateTime);
 
 function updateTime(){
-	var newTime = document.getElementById("focus-length").value;
-	newTime.toString();
-	newTime = newTime + ":00";
-	document.getElementById('focustimer').textContent = newTime;
-	localStorage.setItem('newTime', newTime);
-	console.log(newTime);
+	var newFocusTime = document.getElementById("focus-length").value;
+	newFocusTime.toString();
+	newFocusTime = newFocusTime + ":00";
+	var newRelaxTime = document.getElementById("relax-length").value;
+	newRelaxTime.toString();
+	newRelaxTime = newRelaxTime + ":00";
+	document.getElementById('focustimer').textContent = newFocusTime;
+	//document.getElementById('relaxtimer').textContent = newRelaxTime;
+//	if (document.getElementById("focus-length")){
+//		document.getElementById('focustimer').textContent = newFocusTime;};
+//	if (document.getElementById("relax-length")){
+//		document.getElementById('relaxtimer').textContent = newRelaxTime;};
+	localStorage.setItem('newFocusValue', newFocusTime);
+	localStorage.setItem('newRelaxValue', newRelaxTime);
+	console.log(newFocusValue);
+	console.log(newRelaxValue);
 }
 
 var noAlert = document.getElementById("switch");
@@ -55,4 +68,19 @@ function wellbeingTips(){
   } else {
     tips.style.visibility = "visible";
   }
+}
+
+
+
+if (newFocusValue !== undefined && newFocusValue !== null){
+	var focusNumber = newFocusValue.slice(0, 2);
+	focusNumber = parseInt(focusNumber, 10);
+	document.getElementById('focus-length_MP_cBdLN29i2').value = focusNumber;
+}
+
+
+if (newRelaxValue !== undefined && newRelaxValue !== null){
+	var relaxNumber = newRelaxValue.slice(0, 2);
+	relaxNumber = parseInt(relaxNumber, 10);
+	document.getElementById('relax-length_MP_cBdLN29i2').value = relaxNumber;
 }

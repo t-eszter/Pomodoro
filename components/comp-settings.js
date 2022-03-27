@@ -1,10 +1,10 @@
 class Settings extends HTMLElement {
-  constructor() {
-    super();
-  }
+    constructor() {
+        super();
+    }
 
-connectedCallback(){
-    this.innerHTML = `
+    connectedCallback() {
+        this.innerHTML = `
    <!-- Settings -->
          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
           <div class="offcanvas-header">
@@ -54,7 +54,7 @@ connectedCallback(){
 			
       </div>
     `;
-  }
+    }
 }
 
 customElements.define('settings-component', Settings);
