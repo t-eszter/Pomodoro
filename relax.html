@@ -21,13 +21,7 @@
 <!--	 https://www.youtube.com/watch?v=8Xdwr4cRTVA-->
 <!--	  https://essential.audio-->
 <!--	  https://codepen.io/EmNudge/pen/rRbLJQ-->
-	  
-	  
-	  
-	
-	
 
-<!--    <title>Pomodoro Timer</title>-->
   </head>
   <body id="relax">
     <div class="container h-100 relaxState">
@@ -187,6 +181,11 @@
 	
   <script src="js/relaxtimer.js"></script>
 	<script src="js/settings.js"></script>
+	<script>
+			if (newRelaxValue !== undefined && newRelaxValue !== null){
+			 	document.getElementById('relaxtimer').textContent = newRelaxValue;
+			}
+	</script>
 
 
 </html>

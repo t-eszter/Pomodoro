@@ -83,18 +83,14 @@
   </body>
   <script src="js/focustimer.js"></script>
 	<script src="js/settings.js"></script>
-		  <script>
-			var newTime = localStorage.getItem('newTime');
-			  console.log(newTime);
-			if (newTime!== undefined && newTime !== null){
-			 document.getElementById('focustimer').textContent = newTime;
-			var focusValue = document.getElementById("focus-length");
-			var focusNumber = newTime.slice(0, 2);
-				focusNumber = parseInt(focusNumber, 10);
-			focusValue.value = focusNumber;
-				console.log(focusValue.value);
+	<script>
+			if (newFocusValue !== undefined && newFocusValue !== null){
+			 	document.getElementById('focustimer').textContent = newFocusValue;
 			}
-	  		</script>
+			if (newRelaxValue !== undefined && newRelaxValue !== null){
+			 	document.getElementById('relaxtimer').textContent = newRelaxValue;
+			}
+	</script>
 </html>
 
 <!--https://shaack.com/projekte/bootstrap-input-spinner/-->

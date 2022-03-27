@@ -2,29 +2,30 @@
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
-html,body{
-  height: 100%;
-	font-family: 'Montserrat', sans-serif;
+html,
+body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
-	/* rainbow */
-background: linear-gradient(162.46deg, #F57DF8 0%, #8C4FC9 42.2%, #AEE0E6 100%) !important;
+    /* rainbow */
+    background: linear-gradient(162.46deg, #F57DF8 0%, #8C4FC9 42.2%, #AEE0E6 100%) !important;
 
 }
 
-#relax{
+#relax {
     background: #EBFFFB !important;
 }
 
 strong {
-	color: #000;
+    color: #000;
 }
 
 label {
-	font-weight: 700;
-	font-family: 'Montserrat', sans-serif;
-	padding-bottom: 8px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 8px;
 }
 
 .focus {
@@ -41,15 +42,15 @@ label {
 }
 
 
-#focusContainer .circle-1{
+#focusContainer .circle-1 {
     width: 350px;
     height: 350px;
     border-radius: 50%;
     background-color: #fff;
-	opacity: 0.3;
+    opacity: 0.3;
 }
 
-#focusContainer .circle-2{
+#focusContainer .circle-2 {
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -69,87 +70,87 @@ label {
     width: 300px;
     height: 300px;
     margin: 0 auto;
-	margin-top: 50px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#relaxContainer .circle-1{
+#relaxContainer .circle-1 {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     background-color: #fff;
-	opacity: 0.3;
+    opacity: 0.3;
 }
 
 #relaxContainer .circle-1-big {
-	transform-origin: center;
-	-webkit-animation: breathing 30s ease infinite;
+    transform-origin: center;
+    -webkit-animation: breathing 30s ease infinite;
     animation: breathing 30s ease infinite;
-	border-radius: 50%;
+    border-radius: 50%;
     background: linear-gradient(162.46deg, #F57DF8 0%, #8C4FC9 42.2%, #AEE0E6 100%);
 }
 
 
 @keyframes breathing {
-  from {
-	  width: 200px;
-	  height: 200px;
-	  background-position: 0% 50%;
-  }
-	
-	33.333% {
-		width: 300px;
-	  height: 300px;
-		background-position: 100% 50%;
+    from {
+        width: 200px;
+        height: 200px;
+        background-position: 0% 50%;
+    }
 
-	}
-	
-	83.333%{
-		width: 300px;
-	  height: 300px;
-		background-position: 0% 50%;
+    33.333% {
+        width: 300px;
+        height: 300px;
+        background-position: 100% 50%;
 
-	}
+    }
+
+    83.333% {
+        width: 300px;
+        height: 300px;
+        background-position: 0% 50%;
+
+    }
 
 
-  	to {
-	width: 200px;
-	height: 200px;
-	background-position: 0% 50%;
-  }
+    to {
+        width: 200px;
+        height: 200px;
+        background-position: 0% 50%;
+    }
 }
 
 @-webkit-keyframes breathing {
-  from {
-	  width: 200px;
-	  height: 200px;
-	  background-position: 0% 50%;
-  }
-	
-	33.333% {
-		width: 300px;
-	  height: 300px;
-		background-position: 100% 50%;
-	}
-	
-	83.333%{
-		width: 300px;
-	  height: 300px;
-		background-position: 0% 50%;
-	}
+    from {
+        width: 200px;
+        height: 200px;
+        background-position: 0% 50%;
+    }
+
+    33.333% {
+        width: 300px;
+        height: 300px;
+        background-position: 100% 50%;
+    }
+
+    83.333% {
+        width: 300px;
+        height: 300px;
+        background-position: 0% 50%;
+    }
 
 
-  	to {
-	width: 200px;
-	height: 200px;
-	background-position: 0% 50%;
-  }
+    to {
+        width: 200px;
+        height: 200px;
+        background-position: 0% 50%;
+    }
 }
 
 
-#relaxContainer .circle-2{
+#relaxContainer .circle-2 {
     width: 170px;
     height: 170px;
     border-radius: 50%;
@@ -162,11 +163,11 @@ label {
     display: flex;
     align-items: center;
     align-content: center;
-	flex-direction: column;
+    flex-direction: column;
 }
 
 
-#focusContainer .circle-2 h3{
+#focusContainer .circle-2 h3 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 60px;
@@ -176,7 +177,7 @@ label {
     letter-spacing: 0.1em;
 }
 
-#relaxContainer .circle-2 h3{
+#relaxContainer .circle-2 h3 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
@@ -184,53 +185,55 @@ label {
     width: 100%;
     font-weight: 100;
     letter-spacing: 0.1em;
-	padding-top: 40px;
+    padding-top: 40px;
 }
 
-#relaxContainer .breathingText p:before{
-	content: '';
+#relaxContainer .breathingText p:before {
+    content: '';
     font-size: 12px;
     -webkit-animation: breathingText 30s ease infinite;
     animation: breathingText 30s ease infinite;
 }
 
 @keyframes breathingText {
-  from {
-	 	content: "Breath in";
-  }
-	
-	33.3% {
-			  content: "Breath in";
+    from {
+        content: "Breath in";
+    }
 
-	}
-	
-	33.333% {
-			  content: "Hold";
+    33.3% {
+        content: "Breath in";
 
-	}
-	
-	83.333%{
-			  content: "Hold";
+    }
 
-	}
-	
-	83.4%{
-			  content: "Breath out";
+    33.333% {
+        content: "Hold";
 
-	}
+    }
 
-  	to {
-		  content: "Breath out";
-  }
+    83.333% {
+        content: "Hold";
+
+    }
+
+    83.4% {
+        content: "Breath out";
+
+    }
+
+    to {
+        content: "Breath out";
+    }
 }
 
 
 .inner {
-  position: absolute;
+    position: absolute;
 }
 
-.about, .relax, .settings {
-/*
+.about,
+.relax,
+.settings {
+    /*
     position: absolute;
     top:0;
     right:0;
@@ -243,23 +246,24 @@ label {
     box-shadow: 0 0 27px #CFF0E3;
 */
 
-	background: rgba(255, 255, 255, 0.8) !important;
-	border: 1px solid #FFFFFF;
-	box-sizing: border-box;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.18), inset 0px 0px 10px rgba(137, 137, 137, 0.25);
-	border-radius: 10px 10px 0 0;
+    background: rgba(255, 255, 255, 0.8) !important;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.18), inset 0px 0px 10px rgba(137, 137, 137, 0.25);
+    border-radius: 10px 10px 0 0;
 }
 
-.about, .settings{
-	width: 50px;
-	height: 51px;
-	
+.about,
+.settings {
+    width: 50px;
+    height: 51px;
+
 }
 
 .relax {
-	width: 150px;
-	height: 51px;
-	margin: 0 30px;
+    width: 150px;
+    height: 51px;
+    margin: 0 30px;
 }
 
 
@@ -285,103 +289,107 @@ label {
     font-family: 'Montserrat', sans-serif;
     font-size: 29px;
     cursor: pointer;
-	margin: 0 30% 30px 30%;
-	position: absolute;
-	bottom: 0;
+    margin: 0 30% 30px 30%;
+    position: absolute;
+    bottom: 0;
 }
 
 /*switch*/
 
-.switchToggle{
-	display: flex;
+.switchToggle {
+    display: flex;
     justify-content: space-between;
-	align-items: center;
-	padding-bottom: 20px;
+    align-items: center;
+    padding-bottom: 20px;
 }
 
 .switchToggle input[type=checkbox] {
-	height: 0;
-	width: 0;
-	visibility: hidden;
-	position: absolute;
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    position: absolute;
 }
 
 .switchToggle label {
-	cursor: pointer;
-	text-indent: -9999px;
-	width: 90px;
-	max-width: 90px;
-	height: 44px;
-	background: #F5F5F5;
-	display: block;
-	border-radius: 100px;
-	position: relative;
-	display: inline-block;
-	margin-left: 30px;
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 90px;
+    max-width: 90px;
+    height: 44px;
+    background: #F5F5F5;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
 }
 
 .switchToggle label:after {
-	content: '';
-	position: absolute;
-	top: 6px;
-	left: 6px;
-	width: 32px;
-	height: 32px;
-	background: #83BC89;
-	border-radius: 90px;
-	transition: 0.3s;
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 32px;
+    height: 32px;
+    background: #83BC89;
+    border-radius: 90px;
+    transition: 0.3s;
 }
 
-.switchToggle input:checked + label, .switchToggle input:checked + input + label {
-	background: #F5F5F5;
+.switchToggle input:checked+label,
+.switchToggle input:checked+input+label {
+    background: #F5F5F5;
 }
 
-.switchToggle input + label:before, .switchToggle input + input + label:before {
-	content: 'ON';
-	position: absolute;
-	top: 10px;
-	left: 44px;
-	width: 32px;
-	height: 32px;
-	border-radius: 90px;
-	transition: 0.3s;
-	text-indent: 0;
-	color: #000;
+.switchToggle input+label:before,
+.switchToggle input+input+label:before {
+    content: 'ON';
+    position: absolute;
+    top: 10px;
+    left: 44px;
+    width: 32px;
+    height: 32px;
+    border-radius: 90px;
+    transition: 0.3s;
+    text-indent: 0;
+    color: #000;
 }
 
-.switchToggle input:checked + label:before, .switchToggle input:checked + input + label:before {
-	content: 'OFF';
-	position: absolute;
-	top: 10px;
-	left: 17px;
-	width: 32px;
-	height: 32px;
-	border-radius: 90px;
-	transition: 0.3s;
-	text-indent: 0;
-	color: #000;
+.switchToggle input:checked+label:before,
+.switchToggle input:checked+input+label:before {
+    content: 'OFF';
+    position: absolute;
+    top: 10px;
+    left: 17px;
+    width: 32px;
+    height: 32px;
+    border-radius: 90px;
+    transition: 0.3s;
+    text-indent: 0;
+    color: #000;
 }
 
-.switchToggle input:checked + label:after, .switchToggle input:checked + input + label:after {
-	left: calc(100% - 2px);
-	transform: translateX(-100%);
-	background: #A1a1a1;
+.switchToggle input:checked+label:after,
+.switchToggle input:checked+input+label:after {
+    left: calc(100% - 2px);
+    transform: translateX(-100%);
+    background: #A1a1a1;
 }
 
 .switchToggle label:active:after {
-	width: 60px;
+    width: 60px;
 }
 
 .toggle-switchArea {
-	margin: 10px 0 10px 0;
+    margin: 10px 0 10px 0;
 }
 
 .switchToggle label {
-	padding: 9px;
+    padding: 9px;
 }
 
 .switchToggle span {
-	font-size: 0.75rem;
+    font-size: 0.75rem;
     padding-left: 15px;
 }
 
@@ -389,30 +397,30 @@ label {
 /* This CSS file is unnecessary if you are not using vertical buttons functionality */
 
 .bootstrap-touchspin .input-group-btn-vertical {
-  position: absolute;
-  right: 0;
-  height: 100%;
-  z-index: 11;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    z-index: 11;
 }
 
-.bootstrap-touchspin .input-group-btn-vertical > .btn {
-  position: absolute;
-  right: 0;
-  height: 50%;
-  padding: 0;
-  width: 2em;
-  text-align: center;
-  line-height: 1;
+.bootstrap-touchspin .input-group-btn-vertical>.btn {
+    position: absolute;
+    right: 0;
+    height: 50%;
+    padding: 0;
+    width: 2em;
+    text-align: center;
+    line-height: 1;
 }
 
 .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-up {
-  border-radius: 0 4px 0 0;
-  top: 0;
+    border-radius: 0 4px 0 0;
+    top: 0;
 }
 
 .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down {
-  border-radius: 0 0 4px 0;
-  bottom: 0;
+    border-radius: 0 0 4px 0;
+    bottom: 0;
 }
 
 .btn-outline-secondary {
@@ -421,98 +429,101 @@ label {
 }
 
 .input-group {
-	width: 136px !important;
+    width: 136px !important;
     height: 44px !important;
 }
 
 .input-group .btn {
-	background-color: #DCDCDC !important;
+    background-color: #DCDCDC !important;
 }
 
 #f-length {
-	padding-bottom: 20px;
-	padding-left: 30px;
-	display: inline-block;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    display: inline-block;
 }
 
 #f-settings {
-	padding: 30px;
+    padding: 30px;
 }
 
 #r-length {
-	display: inline-block;
-	padding-left: 20px;
+    display: inline-block;
+    padding-left: 20px;
 }
 
 
 .modal-content {
-	font-family: 'Montserrat', sans-serif;
-	line-height: 32px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 32px;
 }
 
-.modal-body .row:nth-child(odd){
-	height: 4rem;
+.modal-body .row:nth-child(odd) {
+    height: 4rem;
 }
 
-.relaxBtn, .breathingBtn {
+.relaxBtn,
+.breathingBtn {
 
-width: 280px;
-height: 44px;
+    width: 280px;
+    height: 44px;
 
-background: #FFFFFF !important;
-box-shadow: 0px 0px 28px rgba(19, 133, 171, 0.24);
-border-radius: 5px !important;
-	
-	margin: 0 auto;
-	margin-top: 50px;
+    background: #FFFFFF !important;
+    box-shadow: 0px 0px 28px rgba(19, 133, 171, 0.24);
+    border-radius: 5px !important;
+
+    margin: 0 auto;
+    margin-top: 50px;
 
 }
 
 .modal-backdrop.show {
-	opacity: 0 !important;
+    opacity: 0 !important;
 }
 
 .offcanvas-bottom {
-	height: 20vh !important;
-	border-top: none !important;
-	box-shadow: 0px 0px 1000px rgba(19, 133, 171, 0.24);
+    height: 20vh !important;
+    border-top: none !important;
+    box-shadow: 0px 0px 1000px rgba(19, 133, 171, 0.24);
 }
 
 .offcanvas-end {
-	border-left: none !important;
-	box-shadow: 0px 0px 28px rgba(19, 133, 171, 0.24);
+    border-left: none !important;
+    box-shadow: 0px 0px 28px rgba(19, 133, 171, 0.24);
 }
 
 #audioPlayer {
-	padding-top: 0 !important;
+    padding-top: 0 !important;
 }
 
 .modal-content {
-	border: none !important;
-	box-shadow: 0px 0px 1000px rgba(19, 133, 171, 0.24);
+    border: none !important;
+    box-shadow: 0px 0px 1000px rgba(19, 133, 171, 0.24);
 }
 
-.tips, .books, .news{
-	flex-direction: column;
+.tips,
+.books,
+.news {
+    flex-direction: column;
 }
 
 
 .tipsContainer {
-	padding: 0 10%;
-	column-gap: 20px;
+    padding: 0 10%;
+    column-gap: 20px;
 }
 
 .tipsContainer p {
-	padding-top: 20px;
+    padding-top: 20px;
 }
 
 .tipsContainer h4 {
-	padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 
-.tipsContainer p a{
-	text-decoration: none;
-	font-size: 15px;
-	line-height: 25px;
-	color: #1385AB;
+.tipsContainer p a {
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 25px;
+    color: #1385AB;
 }
